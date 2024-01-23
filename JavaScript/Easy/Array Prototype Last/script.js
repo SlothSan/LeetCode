@@ -27,8 +27,7 @@ arr is a valid JSON array
  * @return {null|boolean|number|string|Array|Object}
  */
 Array.prototype.last = function () {
-  if (this.length > 1) {
-    let last = this.length - 1;
+  if (this.length >= 1) {
     return this[this.length - 1];
   } else {
     return -1;
