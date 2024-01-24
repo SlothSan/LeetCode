@@ -41,10 +41,9 @@ var once = function (fn) {
   return function (...args) {
     if (called) {
       return undefined;
-    } else {
-      called = true;
-      return fn(...args);
     }
+    called = true;
+    return fn(...args);
   };
 };
 
